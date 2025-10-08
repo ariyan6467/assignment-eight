@@ -27,13 +27,13 @@
 #### Header
 
 - The header must include:
-  - A logo.on clicking it user will be navigated to home page.
-  - A navigation bar with links [ `home` , `apps` , `installation` ] and active route indication.
-  - A `Contribution` button as Figma linking to the your GitHub profile.
+  
+ 
+ 
 
 #### Footer
 
-- Design a custom footer using your own creativity and style.
+
 
 #### Data
 
@@ -65,25 +65,19 @@
 
 #### Banner
 
-- Must contain a center-aligned heading, text, and two buttons.
-- “App Store” button will redirect to the App Store.
-- “Play Store” button will redirect to the Play Store.
 
 #### States Section
 
-- Must contain three state cards as shown in Figma.
+
 - Each state should have a title and a unique background color or style.
 
 #### Top Apps Section
 
-- Display eight apps in a four-column layout.
+- 
 - Each app card should display:
-  - App title
-  - Image
-  - Download count
-  - Average rating
+  
 - Clicking on a card should navigate the user to the App Details page.
-- Include a “Show All” button that navigates to the All Apps page.
+
 
 ---
 
@@ -93,22 +87,16 @@
 
 - Include a title and subtitle following the Figma design.
 
-#### Search and States
 
-- Display the total number of apps on the left and a search bar on the right.
-- `Implement live search functionality`
-  - filters apps by title as the user types.
-  - Search will be case-insensitive
-  - If no app matches, display a “No App Found” message.
+
+
+
+ 
+  
+  
 
 #### App Section
 
-- Display all apps from the JSON data.
-- Each app card should include:
-  - App title
-  - Image
-  - Download count
-  - Average rating
 - Clicking on an app card should navigate to the App Details page.
 
 ---
@@ -118,7 +106,7 @@
 #### App Information
 
 - Show app image on the left.
-- Display app details such as title, rating, downloads, reviews.
+
 - Include an `Install button`:
   - When clicked, it becomes disabled and the text changes to `Installed`.
   - Show a Success Toast after App installed
@@ -157,7 +145,7 @@
 
 - When the “Install” button is clicked:
   - Save the app to localStorage.
-  - If the app is already installed, show a disabled button with the text `Installed`.
+  
 
 #### My Installation Page
 

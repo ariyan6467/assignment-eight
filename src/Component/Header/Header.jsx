@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+
 import Logo from "../../../B12-A08-Hero-Apps/assets/logo.png"
 
 const Header = () => {
@@ -14,13 +15,34 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <NavLink>
+         <NavLink
+         to="/"
+      className={({ isActive }) =>
+          isActive
+            ? "text-black border-b-2 border-purple-500 px-3 py-2 rounded-md"
+            : "text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md"
+        }
+      >
         <li><a>Home</a></li>
       </NavLink>
-      <NavLink>
+       <NavLink
+      to="/Applist"
+      className={({ isActive }) =>
+          isActive
+            ? "text-black border-b-2 border-purple-500 px-3 py-2 rounded-md"
+            : "text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md"
+        }
+      >
         <li><a>Apps</a></li>
       </NavLink>
-      <NavLink>
+     <NavLink
+      to="/InstallLIst"
+      className={({ isActive }) =>
+          isActive
+            ? "text-black border-b-2 border-purple-500 px-3 py-2 rounded-md"
+            : "text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md"
+        }
+      >
         <li><a>Installation</a></li>
       </NavLink>
       </ul>
@@ -65,7 +87,7 @@ const Header = () => {
   <div className="navbar-end">
     <NavLink to="https://github.com/">
         <a className="btn flex items-center gap-2 px-4 py-2 rounded-md text-white font-semibold 
-bg-gradient-to-r from-[#6E72FC] to-[#AD1DEB] hover:opacity-90 transition ">Button</a>
+bg-gradient-to-r from-[#6E72FC] to-[#AD1DEB] hover:opacity-90 transition ">Contribution</a>
     </NavLink>
   </div>
 </div>

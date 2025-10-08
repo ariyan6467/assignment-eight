@@ -1,11 +1,36 @@
-import React, { useContext } from "react";
+import React, {  useContext, useEffect, useState } from "react";
 import { BookDetails } from "../../../Root/Root";
 import Download from "../../../B12-A08-Hero-Apps/assets/download.png";
 import Ratings from "../../../B12-A08-Hero-Apps/assets/rating.png";
 import REview from "../../../B12-A08-Hero-Apps/assets/review.png";
+import { addToDb, getStoredApp } from "../Utility/Utility";
+import "./Details.css";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Details = () => {
   const { details } = useContext(BookDetails);
+  const id = details.id;
+  console.log(id);
+   const [installed, setInstalled] = useState(false);
+    const [installing, setInstalling] = useState("Install Now");
+  
+const notify = () => toast(`${details.title}App Installed Successfully!`);
+  const handleInstall = (id) => {
+    addToDb(id);
+     setInstalled(true);
+   setInstalling("Installed");
+   notify();
+  
+  }
+
+  useEffect(()=>{
+    const storedApp = getStoredApp();
+    if(storedApp.includes(id)){
+      setInstalled(true);
+      setInstalling("Installed");
+    }
+  },[id]  )
+
   return (
     <div>
       {/* Details Container */}
@@ -13,7 +38,7 @@ const Details = () => {
         <div className="ml-8 mr-5 my-8  p-2 ">
           <img
             className="w-[390px] rounded-2xl"
-            src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"
+            src={details.image}
             alt=""
             srcset=""
           />
@@ -21,7 +46,7 @@ const Details = () => {
         <div className=" w-full my-12 ">
           <h1 className="font-bold text-3xl uppercase">
             <span>{details.title}:</span>
-            <span>g nbn n n</span>
+            <span>{details.companyName}</span>
           </h1>
           <p className="text-sm text-gray-700 my-2">
             Developed by: <span>{details.
@@ -46,7 +71,11 @@ companyName
               <span className="text-3xl font-bold">{details.reviews}</span>
             </div>
           </div>
-          <button className="btn btn-success text-white">Install Now</button>
+          <button
+          disabled={installed}
+          onClick={()=>handleInstall(id)}
+          className=" bg-green-700 px-4 py-2 rounded-2xl  text-white disabled:opacity-50 disabled:cursor-not-allowed">{installing}</button>
+          <ToastContainer />
         </div>
       </div>
 
@@ -57,41 +86,10 @@ companyName
       <div>
         <h1 className="text-2xl font-semibold my-4">Describtion</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          animi, consequatur inventore doloribus reprehenderit eveniet velit
-          ipsa qui facere quis officia porro! Id dolorum quidem earum fugiat.
-          Culpa ipsum voluptates, adipisci tempore amet quaerat sapiente ut
-          obcaecati quisquam quos nemo cupiditate porro quibusdam tenetur rerum
-          assumenda, nihil architecto voluptatum fugiat? Exercitationem eum a
-          dignissimos soluta rerum ullam in nisi nihil, eius quo amet minus
-          repudiandae modi blanditiis! Voluptas sunt odio accusamus cum dicta
-          quidem aliquam, maiores praesentium hic earum enim ullam architecto
-          laboriosam doloremque quo rem ab nobis quaerat ex nisi, beatae
-          dignissimos. Saepe voluptates quod minima, obcaecati quidem excepturi?
+          {details.description}
         </p>
 
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
-          doloremque temporibus velit quas amet perspiciatis magnam minima
-          molestiae excepturi deserunt incidunt corrupti non totam dolores nulla
-          quidem culpa consectetur accusantium iusto iste. Obcaecati dolorum
-          libero quis repellendus nostrum eum soluta omnis sed id ullam aliquam
-          sapiente corporis, quo repellat temporibus iusto quas. Alias culpa
-          reprehenderit labore similique perferendis, laudantium veniam
-          distinctio repellat architecto eum autem excepturi eveniet saepe
-          provident officia consequatur totam recusandae magni unde possimus
-          quos nobis eos delectus!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste
-          quae, aliquid autem perferendis placeat quidem recusandae aut, dolorem
-          harum fugit assumenda, eligendi distinctio atque! Sit laborum, minima
-          aliquam rem soluta assumenda alias a est. Similique mollitia possimus
-          sint consectetur itaque dolorem ipsam sit esse a modi, sapiente, odio
-          dolore nam fugit, ad porro laborum sunt. Non eum reprehenderit ipsa
-          quibusdam necessitatibus facere culpa animi quos! Eligendi odit
-          incidunt hic.
-        </p>
+        
       </div>
     </div>
   );

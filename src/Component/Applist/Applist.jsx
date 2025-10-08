@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Apps from '../HomeApp/Apps';
+import LOader from "../Loader/Loader";
 
 const Applist = () => {
+   const [loading, setLoading] = useState(false);
+
+   const handleSearch =(e) =>{
+    const value = e.target.value;
+    setSearch(value);
+    setLoading(true);
+    setTimeout(() => {
+        setLoading(false);
+    }, 1000);
+   }
     const apps = useLoaderData();
     console.log(apps);
     const [search, setSearch] = useState('');
@@ -17,28 +28,25 @@ const Applist = () => {
            <div className='flex justify-between items-center my-5 font-bold'>
            <p> <span>({filteredApps.length})</span> Apps Found</p>
            <input
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={handleSearch}
            className='border-2 border-gray-300 rounded-md p-2'
            type="search" name="search" placeholder='Search Apps...' id="" />
            </div>
-              {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-                {
-                    filteredApps.map(app=><Apps key={app.id} app={app}></Apps>)
-                }
-              </div> */}
+           
               {
-                filteredApps.length > 0 ? (
-                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-                {
-                    filteredApps.map(app=><Apps key={app.id} app={app}></Apps>)
-                }
-              </div>
-
-                ):(
-                     <p className="text-center text-gray-500 text-3xl">
-          ❌ No matching apps found.
-        </p>
-                )
+               loading?(
+                <LOader></LOader>
+               ) : filteredApps.length > 0 ? (
+                   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                       {
+                           filteredApps.map(app=><Apps key={app.id} app={app}></Apps>)
+                       }
+                   </div>
+               ) : (
+                   <p className="text-center text-gray-500 text-3xl">
+                       ❌ No matching apps found.
+                   </p>
+               )
               }
         </div>
     );
