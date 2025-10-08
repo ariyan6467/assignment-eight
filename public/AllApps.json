@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://via.placeholder.com/300x200?text=Productivity",
+    "title": "TaskFlow",
+    "companyName": "FlowTech LLC",
+    "id": 1,
+    "description": "An intuitive task manager to boost your productivity.",
+    "size": 12.4,
+    "reviews": 2626,
+    "ratingAvg": 3.5,
+    "downloads": 14385,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 428 },
+      { "name": "3 star", "count": 953 },
+      { "name": "4 star", "count": 437 },
+      { "name": "5 star", "count": 708 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Health",
+    "title": "FitPulse",
+    "companyName": "VitalFit Solutions",
+    "id": 2,
+    "description": "Track workouts, monitor health metrics, and stay fit.",
+    "size": 23.5,
+    "reviews": 135762,
+    "ratingAvg": 4.0,
+    "downloads": 163891,
+    "ratings": [
+      { "name": "1 star", "count": 3454 },
+      { "name": "2 star", "count": 2899 },
+      { "name": "3 star", "count": 12619 },
+      { "name": "4 star", "count": 24136 },
+      { "name": "5 star", "count": 96454 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Finance",
+    "title": "BudgetBuddy",
+    "companyName": "FinanceGenius Inc",
+    "id": 3,
+    "description": "Manage finances, track expenses, and save money easily.",
+    "size": 18.2,
+    "reviews": 33650,
+    "ratingAvg": 4.4,
+    "downloads": 469798,
+    "ratings": [
+      { "name": "1 star", "count": 421 },
+      { "name": "2 star", "count": 682 },
+      { "name": "3 star", "count": 1435 },
+      { "name": "4 star", "count": 5972 },
+      { "name": "5 star", "count": 25140 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Games",
+    "title": "Puzzle Quest",
+    "companyName": "GameCraft Ltd",
+    "id": 4,
+    "description": "Solve challenging puzzles and embark on an epic quest.",
+    "size": 55.1,
+    "reviews": 100336,
+    "ratingAvg": 4.0,
+    "downloads": 181960,
+    "ratings": [
+      { "name": "1 star", "count": 9812 },
+      { "name": "2 star", "count": 7483 },
+      { "name": "3 star", "count": 18514 },
+      { "name": "4 star", "count": 28531 },
+      { "name": "5 star", "count": 49010 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Education",
+    "title": "LearnHub",
+    "companyName": "EduTech Lab",
+    "id": 5,
+    "description": "Interactive courses and quizzes to enhance your knowledge.",
+    "size": 40.3,
+    "reviews": 30077,
+    "ratingAvg": 3.1,
+    "downloads": 559783,
+    "ratings": [
+      { "name": "1 star", "count": 4256 },
+      { "name": "2 star", "count": 6873 },
+      { "name": "3 star", "count": 13360 },
+      { "name": "4 star", "count": 3564 },
+      { "name": "5 star", "count": 2024 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Photography",
+    "title": "PhotoMagic",
+    "companyName": "PixWave Studios",
+    "id": 6,
+    "description": "Edit photos with magical filters and creative tools.",
+    "size": 34.7,
+    "reviews": 21041,
+    "ratingAvg": 3.9,
+    "downloads": 294772,
+    "ratings": [
+      { "name": "1 star", "count": 1321 },
+      { "name": "2 star", "count": 1046 },
+      { "name": "3 star", "count": 3782 },
+      { "name": "4 star", "count": 8732 },
+      { "name": "5 star", "count": 11560 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Travel",
+    "title": "TripPlanner",
+    "companyName": "Wanderlust Co.",
+    "id": 7,
+    "description": "Plan trips, find flights, and explore destinations worldwide.",
+    "size": 50.0,
+    "reviews": 46969,
+    "ratingAvg": 4.1,
+    "downloads": 396435,
+    "ratings": [
+      { "name": "1 star", "count": 1587 },
+      { "name": "2 star", "count": 1024 },
+      { "name": "3 star", "count": 7285 },
+      { "name": "4 star", "count": 12569 },
+      { "name": "5 star", "count": 25504 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Food",
+    "title": "RecipeBook",
+    "companyName": "FoodieApps",
+    "id": 8,
+    "description": "Discover and save recipes for every occasion.",
+    "size": 25.9,
+    "reviews": 37723,
+    "ratingAvg": 2.8,
+    "downloads": 318973,
+    "ratings": [
+      { "name": "1 star", "count": 7245 },
+      { "name": "2 star", "count": 6532 },
+      { "name": "3 star", "count": 12347 },
+      { "name": "4 star", "count": 8387 },
+      { "name": "5 star", "count": 7212 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Business",
+    "title": "InvoiceHero",
+    "companyName": "BizSoft Corp",
+    "id": 9,
+    "description": "Create invoices and manage your business finances on the go.",
+    "size": 22.2,
+    "reviews": 8359,
+    "ratingAvg": 3.6,
+    "downloads": 92335,
+    "ratings": [
+      { "name": "1 star", "count": 243 },
+      { "name": "2 star", "count": 432 },
+      { "name": "3 star", "count": 1832 },
+      { "name": "4 star", "count": 2341 },
+      { "name": "5 star", "count": 3501 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Social",
+    "title": "ChatterBox",
+    "companyName": "SocialConnect",
+    "id": 10,
+    "description": "Chat with friends and share moments instantly.",
+    "size": 48.5,
+    "reviews": 50689,
+    "ratingAvg": 3.3,
+    "downloads": 596696,
+    "ratings": [
+      { "name": "1 star", "count": 5691 },
+      { "name": "2 star", "count": 5128 },
+      { "name": "3 star", "count": 11689 },
+      { "name": "4 star", "count": 11115 },
+      { "name": "5 star", "count": 17266 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=News",
+    "title": "DailyNews",
+    "companyName": "NewsFlash Media",
+    "id": 11,
+    "description": "Stay informed with the latest news and headlines.",
+    "size": 15.3,
+    "reviews": 26177,
+    "ratingAvg": 3.1,
+    "downloads": 244405,
+    "ratings": [
+      { "name": "1 star", "count": 3872 },
+      { "name": "2 star", "count": 7321 },
+      { "name": "3 star", "count": 8612 },
+      { "name": "4 star", "count": 4904 },
+      { "name": "5 star", "count": 3468 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Music",
+    "title": "TuneStream",
+    "companyName": "MelodyStream Inc",
+    "id": 12,
+    "description": "Stream music and create playlists from your favorite artists.",
+    "size": 60.4,
+    "reviews": 101604,
+    "ratingAvg": 3.2,
+    "downloads": 168560,
+    "ratings": [
+      { "name": "1 star", "count": 8421 },
+      { "name": "2 star", "count": 10812 },
+      { "name": "3 star", "count": 24062 },
+      { "name": "4 star", "count": 28235 },
+      { "name": "5 star", "count": 30074 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Shopping",
+    "title": "ShopEase",
+    "companyName": "RetailHub",
+    "id": 13,
+    "description": "Browse and shop deals from multiple stores in one app.",
+    "size": 30.0,
+    "reviews": 133031,
+    "ratingAvg": 3.0,
+    "downloads": 244467,
+    "ratings": [
+      { "name": "1 star", "count": 11024 },
+      { "name": "2 star", "count": 14677 },
+      { "name": "3 star", "count": 27233 },
+      { "name": "4 star", "count": 34552 },
+      { "name": "5 star", "count": 33545 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Sports",
+    "title": "ScoreBoard",
+    "companyName": "SportsGeek",
+    "id": 14,
+    "description": "Live scores, news, and stats for all major sports.",
+    "size": 20.1,
+    "reviews": 7014,
+    "ratingAvg": 4.5,
+    "downloads": 61244,
+    "ratings": [
+      { "name": "1 star", "count": 273 },
+      { "name": "2 star", "count": 188 },
+      { "name": "3 star", "count": 547 },
+      { "name": "4 star", "count": 1891 },
+      { "name": "5 star", "count": 5115 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Lifestyle",
+    "title": "MindfulMe",
+    "companyName": "ZenSoft",
+    "id": 15,
+    "description": "Guided meditation sessions to calm your mind.",
+    "size": 10.9,
+    "reviews": 15599,
+    "ratingAvg": 3.5,
+    "downloads": 202526,
+    "ratings": [
+      { "name": "1 star", "count": 812 },
+      { "name": "2 star", "count": 1326 },
+      { "name": "3 star", "count": 6293 },
+      { "name": "4 star", "count": 4010 },
+      { "name": "5 star", "count": 3158 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Utilities",
+    "title": "SystemOptimize",
+    "companyName": "UtilityApps Co.",
+    "id": 16,
+    "description": "Clean and optimize your device for better performance.",
+    "size": 17.8,
+    "reviews": 42067,
+    "ratingAvg": 3.8,
+    "downloads": 371879,
+    "ratings": [
+      { "name": "1 star", "count": 1425 },
+      { "name": "2 star", "count": 2112 },
+      { "name": "3 star", "count": 7041 },
+      { "name": "4 star", "count": 11956 },
+      { "name": "5 star", "count": 20533 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Communication",
+    "title": "ChatWave",
+    "companyName": "CommNetwork",
+    "id": 17,
+    "description": "Instant messaging with a simple and clean interface.",
+    "size": 12.7,
+    "reviews": 39839,
+    "ratingAvg": 4.0,
+    "downloads": 396311,
+    "ratings": [
+      { "name": "1 star", "count": 1125 },
+      { "name": "2 star", "count": 946 },
+      { "name": "3 star", "count": 7180 },
+      { "name": "4 star", "count": 8957 },
+      { "name": "5 star", "count": 22531 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Personalization",
+    "title": "ThemeMaker",
+    "companyName": "PersonalizeIt",
+    "id": 18,
+    "description": "Customize your phone with unique themes and wallpapers.",
+    "size": 8.3,
+    "reviews": 13039,
+    "ratingAvg": 3.8,
+    "downloads": 154799,
+    "ratings": [
+      { "name": "1 star", "count": 654 },
+      { "name": "2 star", "count": 841 },
+      { "name": "3 star", "count": 3287 },
+      { "name": "4 star", "count": 3025 },
+      { "name": "5 star", "count": 5232 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Entertainment",
+    "title": "CinemaStream",
+    "companyName": "EntertainmentWorks",
+    "id": 19,
+    "description": "Stream movies and TV shows on demand.",
+    "size": 75.0,
+    "reviews": 245346,
+    "ratingAvg": 3.8,
+    "downloads": 454011,
+    "ratings": [
+      { "name": "1 star", "count": 12987 },
+      { "name": "2 star", "count": 18340 },
+      { "name": "3 star", "count": 57843 },
+      { "name": "4 star", "count": 65631 },
+      { "name": "5 star", "count": 98045 }
+    ]
+  },
+  {
+    "image": "https://via.placeholder.com/300x200?text=Weather",
+    "title": "WeatherNow",
+    "companyName": "ClimateSoft",
+    "id": 20,
+    "description": "Accurate weather forecasts and alerts for your location.",
+    "size": 5.6,
+    "reviews": 13911,
+    "ratingAvg": 3.8,
+    "downloads": 103856,
+    "ratings": [
+      { "name": "1 star", "count": 745 },
+      { "name": "2 star", "count": 1183 },
+      { "name": "3 star", "count": 3321 },
+      { "name": "4 star", "count": 4472 },
+      { "name": "5 star", "count": 4190 }
+    ]
+  }
+]

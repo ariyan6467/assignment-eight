@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/app1.png",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/94/7f/4d947f95-fd66-6c0c-26af-4254fc00091b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
     "title": "TaskMaster",
     "companyName": "Productivity Inc.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/app2.png",
+    "image": "https://fitlifesa.com/web/images/logo.png",
     "title": "FitLife",
     "companyName": "HealthTech",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/app3.png",
+    "image": "https://png.pngtree.com/element_our/png/20181011/snapchat-social-media-icon-design-template-vector-png_127001.jpg",
     "title": "PhotoSnap",
     "companyName": "SnapSoft",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/app4.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2MaTCe4JQPta0SbtX0PgxarmmqIfIiggHg&s",
     "title": "BudgetBuddy",
     "companyName": "FinanceGuru",
     "id": 4,
