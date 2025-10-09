@@ -85,7 +85,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <NavLink to="https://github.com/">
+    <NavLink to="https://github.com/ariyan6467">
         <a className="btn flex items-center gap-2 px-4 py-2 rounded-md text-white font-semibold 
 bg-gradient-to-r from-[#6E72FC] to-[#AD1DEB] hover:opacity-90 transition ">Contribution</a>
     </NavLink>

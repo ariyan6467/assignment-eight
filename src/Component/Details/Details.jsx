@@ -1,35 +1,53 @@
-import React, {  useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BookDetails } from "../../../Root/Root";
 import Download from "../../../B12-A08-Hero-Apps/assets/download.png";
 import Ratings from "../../../B12-A08-Hero-Apps/assets/rating.png";
 import REview from "../../../B12-A08-Hero-Apps/assets/review.png";
 import { addToDb, getStoredApp } from "../Utility/Utility";
 import "./Details.css";
-import { ToastContainer, toast } from 'react-toastify';
-
+import { ToastContainer, toast } from "react-toastify";
+import {
+  BarChart,
+  Bar,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  CartesianGrid,
+} from "recharts";
 const Details = () => {
   const { details } = useContext(BookDetails);
+  console.log(details);
   const id = details.id;
-  console.log(id);
-   const [installed, setInstalled] = useState(false);
-    const [installing, setInstalling] = useState("Install Now");
-  
-const notify = () => toast(`${details.title}App Installed Successfully!`);
+
+  const [installed, setInstalled] = useState(false);
+  const [installing, setInstalling] = useState("Install Now");
+
+  const notify = () => toast(`${details.title}App Installed Successfully!`);
   const handleInstall = (id) => {
     addToDb(id);
-     setInstalled(true);
-   setInstalling("Installed");
-   notify();
-  
-  }
+    setInstalled(true);
+    setInstalling("Installed");
+    notify();
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     const storedApp = getStoredApp();
-    if(storedApp.includes(id)){
+    if (storedApp.includes(id)) {
       setInstalled(true);
       setInstalling("Installed");
     }
-  },[id]  )
+  }, [id]);
+
+  const RatingsData = details.ratings;
+  
+  const newArray = RatingsData.map(item => ({
+ name: Number(item.name.split(" ")[0]), // convert "1" → 1
+  count: item.count
+}));
+
+console.log(newArray);
 
   return (
     <div>
@@ -49,9 +67,7 @@ const notify = () => toast(`${details.title}App Installed Successfully!`);
             <span>{details.companyName}</span>
           </h1>
           <p className="text-sm text-gray-700 my-2">
-            Developed by: <span>{details.
-companyName
-}</span>
+            Developed by: <span>{details.companyName}</span>
           </p>
           <div className="border-1 opacity-70 border-gray-500 w-full"></div>
           <div className="flex space-x-28 mt-10">
@@ -72,24 +88,31 @@ companyName
             </div>
           </div>
           <button
-          disabled={installed}
-          onClick={()=>handleInstall(id)}
-          className=" bg-green-700 px-4 py-2 rounded-2xl  text-white disabled:opacity-50 disabled:cursor-not-allowed">{installing}</button>
+            disabled={installed}
+            onClick={() => handleInstall(id)}
+            className=" bg-green-700 px-4 py-2 rounded-2xl  text-white disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {installing}
+          </button>
           <ToastContainer />
         </div>
       </div>
 
       {/* Ratings Container */}
-      <div> </div>
+      <div className="w-full h-96 flex justify-center items-center">
+        <ResponsiveContainer width="80%" height="100%">
+          <BarChart data={newArray}>
+            <XAxis dataKey="count" label={{ value: " Coount of Rating", position: "insideTopRight", offset: 20,}}></XAxis>
+            <YAxis label={{ value: "Stat", position: "insideTopRight", offset: 60,angle: -90}} ></YAxis>
+            <Bar dataKey="count" barSize={35} fill="pink"></Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
 
       {/* DescripTion Container */}
       <div>
         <h1 className="text-2xl font-semibold my-4">Describtion</h1>
-        <p>
-          {details.description}
-        </p>
-
-        
+        <p>{details.description}</p>
       </div>
     </div>
   );
