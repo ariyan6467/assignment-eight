@@ -9,7 +9,7 @@ const HomeApp = () => {
         <div className='text-center my-10 p-5 flex flex-col justify-center items-center'>
             <h1 className='text-3xl font-bold my-5'>Trending Apps</h1>
             <p className='text-sm mb-7 opacity-75'>Explore All Trending Apps on the Market developed by us</p>
-           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4'>
             {
                 apps.map(app=><Apps key={app.id} app={app} />)
             }

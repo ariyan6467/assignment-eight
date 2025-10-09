@@ -11,10 +11,7 @@ import {
   Bar,
   ResponsiveContainer,
   XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-  CartesianGrid,
+  YAxis
 } from "recharts";
 const Details = () => {
   const { details } = useContext(BookDetails);

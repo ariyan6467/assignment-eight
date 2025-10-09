@@ -4,6 +4,8 @@ import { Outlet, useNavigation } from 'react-router';
 import Footer from '../src/Component/Footer/Footer';
 import { BrowserRouter } from "react-router-dom";
 import Loader from "../src/Component/Loader/Loader"
+import ErrorPage from '../src/Component/ErrorPage/ErrorPage';
+import { ToastContainer } from 'react-toastify';
 
 export const BookDetails = createContext([]);
 
@@ -19,18 +21,20 @@ const Root = () => {
 
    
     return (
-      <>
+     
       
         <div className='max-w-7xl mx-auto'>
           
       <Header />
+      
    <BookDetails.Provider value={contextValue}>
+   
        {navigation.state === "loading" ? <Loader /> : <Outlet />}
    </BookDetails.Provider>
-           
+          
            <Footer></Footer>
         </div>
-        </>
+       
     );
 };
 

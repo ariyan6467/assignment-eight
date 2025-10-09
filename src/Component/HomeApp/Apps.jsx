@@ -3,7 +3,7 @@ import Ratings from "../../../B12-A08-Hero-Apps/assets/rating.png"
 import Downloads from "../../../B12-A08-Hero-Apps/assets/download.png"
 import { NavLink } from 'react-router';
 import { BookDetails } from '../../../Root/Root';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Apps = ({ app }) => {
@@ -25,8 +25,8 @@ function handleDetails(){
         <NavLink
         
         to="/Details" onClick={handleDetails}>
-          <div className="card bg-base-100 shadow-xl border-1 border-gray-500 h-[400px]">
-            <figure className='h-2/3'>
+          <div className="card bg-base-100 shadow-xl border-1 border-gray-500 h-[400px] p-2">
+            <figure className='h-2/3 '>
               <img
               className='rounded-2xl'
                 src={app.image}

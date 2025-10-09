@@ -3,6 +3,7 @@ import { getStoredApp } from '../Utility/Utility';
 
 import { useLoaderData } from 'react-router';
 import InstallApp from './InstallApp';
+import { ToastContainer } from 'react-toastify';
 
 
 const InstallLIst = () => {
@@ -50,8 +51,13 @@ const InstallLIst = () => {
 
            <div>
             {
-                installedApps.map(app => <InstallApp key={app.id} app={app}></InstallApp>)
-            }
+                installedApps.map(app => <InstallApp
+                   installedApps={installedApps} 
+                   setInstalledApps={setInstalledApps}
+                    key={app.id} app={app}></InstallApp>)
+                }
+
+                 <ToastContainer />
            </div>
             
         </div>

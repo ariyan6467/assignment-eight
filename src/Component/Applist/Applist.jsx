@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Apps from '../HomeApp/Apps';
 import LOader from "../Loader/Loader";
+import NotFound from '../NotFound/NotFound';
 
 const Applist = () => {
    const [loading, setLoading] = useState(false);
@@ -37,15 +38,13 @@ const Applist = () => {
                loading?(
                 <LOader></LOader>
                ) : filteredApps.length > 0 ? (
-                   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
                        {
                            filteredApps.map(app=><Apps key={app.id} app={app}></Apps>)
                        }
                    </div>
                ) : (
-                   <p className="text-center text-gray-500 text-3xl">
-                       ❌ No matching apps found.
-                   </p>
+                   <NotFound></NotFound>
                )
               }
         </div>

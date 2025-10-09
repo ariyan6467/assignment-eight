@@ -8,6 +8,7 @@ import HomeApp from '../src/Component/HomeApp/HomeApp';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ErrorPage   from "../src/Component/ErrorPage/ErrorPage"
 import Details from '../src/Component/Details/Details';
+import EmptyDet from '../src/Component/EmptyDet.jsx/EmptyDet';
 
  export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ import Details from '../src/Component/Details/Details';
             path:"/Details",
             Component:Details
         },
+        {
+          path:"/Emptydet",
+          Component:EmptyDet
+        }
        
         
 
